@@ -1,0 +1,19 @@
+Instructions for running the project on a cloud-based platform:
+Heroku
+
+Create a new Heroku project.
+Deploy the project code to Heroku.
+Configure the OPENWEATHERMAP_API_KEY environment variable on Heroku.
+Start the Heroku app.
+AWS Lambda
+
+Create a new AWS Lambda function.
+Upload the project code to AWS Lambda.
+Configure the OPENWEATHERMAP_API_KEY environment variable on AWS Lambda.
+Deploy the AWS Lambda function.
+Once the project is deployed on a cloud-based platform, you can start it by running the following command:
+
+heroku local start
+Or, if you are using AWS Lambda:
+
+aws lambda invoke --function-name temperature-alert-agent --payload '{}' out.txt
